@@ -276,3 +276,33 @@ flex-wrap: wrap;
     margin: 0 auto;
   }
 }
+
+.block__services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  &-item{
+    width: 350px;
+    height: 355px;
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+  }
+  &-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+  &-desc {
+    font-size: 16px;
+    color: #7D7987;
+  }
+  &--btn{
+    @extend .btn;
+    margin: 30px auto;
+  }
+}
+
